@@ -1,0 +1,1584 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Raleway&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+.header {
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    top: 0;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: unset !important;
+    align-items: center;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: #000;
+    padding: 10px 15px;
+
+}
+
+.navbar>.container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: end;
+}
+
+/* ******************* dropdown on hover */
+
+.bs-example {
+    margin: auto;
+    width: 25%;
+}
+
+@media screen {
+
+    .dropdown:hover .dropdown-menu,
+    .btn-group:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        margin: auto;
+        background-color: #f05335;
+
+    }
+
+    .dropdown-menu li a {
+        color: #fff !important;
+    }
+
+    .dropdown-toggle {
+        margin: auto;
+    }
+
+    .navbar .dropdown-toggle,
+    .nav-tabs .dropdown-toggle {
+        margin: auto;
+    }
+}
+
+/* .dropdown{
+    background-color: #007095;
+  } */
+
+/* ******************* dropdown on hover */
+
+
+.navbar-nav .nav-link.active {
+    color: #f05335 !important;
+    font-weight: bold;
+}
+
+
+.dropdown-menu li a:hover {
+    color: #f05335 !important;
+}
+
+.navbar-nav li:nth-child(-n + 6):after {
+    content: "";
+    border-right: 2px solid #000;
+    display: block;
+    width: 100%;
+    height: 18px;
+    margin-top: -30px;
+}
+
+.dropdown-menu li:nth-child(-n + 6):after {
+    display: none;
+}
+
+.nav-brand {
+    display: block;
+    width: 339px;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+
+
+.top-nav {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.top-nav .icons img {
+    width: 50px;
+}
+
+.top-nav .num {
+    margin-right: 40px;
+}
+
+.icons i:hover {
+    background-color: #fff;
+    color: #c6172f !important;
+}
+
+.fa-phone {
+    background-color: #f05335;
+    color: #fff;
+    border: 2px solid #fff !important;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.num .phone {
+    width: 40px;
+    background: #f05335;
+    /* text-align: center; */
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.fa-whatsapp {
+    font-size: 18px;
+    border: 1px solid #25D366 !important;
+    color: #25D366 !important;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: 6px;
+}
+
+.fa-facebook {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: 6px;
+    color: #000;
+}
+
+.fa-instagram {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: 6px;
+    color: #000;
+}
+
+.fa-linkedin-in {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 7px;
+    color: #000;
+    margin-left: 6px;
+}
+
+.fa-twitter {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 7px;
+    color: #000;
+    margin-left: 6px;
+}
+
+.top-nav .num h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+
+}
+
+
+
+/* .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+.banner3 .button {
+    min-width: 150px;
+    /* min-height: 15px; */
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.3px;
+    /* font-weight: 700; */
+    color: #fff;
+    background: #f05335;
+    border: none;
+    border-radius: 1000px;
+    /* box-shadow: 12px 12px 24px rgba(79,209,197,.64); */
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 2px;
+}
+
+.banner3 button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(160px + 12px);
+    min-height: calc(35px + 12px);
+    border: 6px solid #f05335;
+    /* box-shadow: 0 0 60px #f05335; */
+    position: absolute;
+    padding: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.banner3 .button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.banner3 button:hover::before,
+button:focus::before {
+    opacity: 1;
+}
+
+/* button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+   */
+.banner3 button:hover::after,
+button:focus::after {
+    animation: block;
+    display: block;
+}
+
+
+
+
+
+/* banner1 */
+
+.banner1 {
+    overflow: hidden;
+}
+
+.banner1 .efficient {
+    position: absolute;
+    color: #fff;
+    margin-top: -460px;
+    z-index: 1;
+    margin-left: 150px;
+}
+
+.efficient .efficientTailored h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    line-height: 55px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.efficient .efficientTailored h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.banner2 {
+    margin: 50px 0;
+}
+
+.banner2 .whychoose {
+    font-family: 'Lato', sans-serif;
+}
+
+.banner2 .whyreasons {
+    background-color: #e9eaec;
+    padding: 20px;
+    height: 200px;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner2 .whyreasons h3 {
+    font-weight: 800;
+}
+
+.banner3 {
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.banner3 .about {
+    background-image: url(../images/img1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 80px 120px;
+}
+
+.banner3 .about .aboutIntegrated {
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(4, 4, 3, 0.58);
+    color: #fff;
+    padding: 50px;
+}
+
+.banner3 .about .aboutIntegrated a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+
+.banner3 .whatset {
+    background-color: #f05335;
+    padding: 50px;
+    color: #fff;
+}
+
+
+.readMore {
+
+    background: #000;
+    border-radius: unset;
+    width: 150px;
+}
+
+.readMore:hover {
+    background-color: #fff;
+    border: 1px solid #f05335;
+}
+
+.readMore a {
+    color: #fff;
+}
+
+.readMore a:hover {
+    color: #f05335;
+    
+}
+
+.readMore i {
+    margin-left: 20px;
+}
+
+.readMore1 {
+    background: #f05335;
+    border-radius: unset;
+    width: 150px;
+    text-align: center;
+}
+
+.readMore1:hover {
+    /* background-color: #000; */
+    border: 1px solid #f05335;
+    background-color: transparent;
+}
+
+.readMore1 a {
+    color: #fff;
+}
+
+.readMore1 a:hover {
+    color: #f05335;
+}
+
+.readMore1 i {
+    margin-left: 20px;
+}
+
+
+.banner4 {
+    margin: 50px 0;
+}
+
+.banner5 {
+    padding: 50px 0;
+    /* background-color: #d5e0ff; */
+    background-color: #e9eaec;
+}
+
+.banner5 .products {
+    border: 1px solid #000;
+    display: flex;
+    padding: 20px;
+    height: 250px;
+}
+
+.banner5 .products img {
+    width: 60px;
+    padding: 10px;
+    background-color: #b0b0b0;
+    height: 60px;
+    border-radius: 32px;
+}
+
+.banner5 .products .productdescr {
+    padding-left: 20px;
+}
+
+.banner5 .products .productdescr p {
+    height: 120px;
+}
+
+
+.banner6 {
+    margin: 50px 0;
+}
+
+.banner7 {
+    background-color: #4c4c4c;
+    padding: 30px 0;
+}
+
+.banner7 .services {
+    color: #fff;
+}
+
+.banner7 .services h1 {
+    color: #f05335;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 50px 25px;
+    color: #fff;
+}
+
+.footer .footericons {
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+.footer .footerlinks h4 {
+    margin-bottom: 16px;
+}
+
+.footer .footerlinks a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footerlinks li {
+    list-style: none;
+}
+
+
+.footer .footerlinks .active{
+    color: #f05335 !important;
+    font-weight: bold;
+}
+
+.footer .footerlinks li:hover{
+    color: #faa624;
+    /* font-weight: 600; */
+    /* border-bottom: 1px solid #faa624; */
+}
+
+.copyright {
+    padding: 15px;
+    background-color: #f05335;
+    font-family: 'Oswald', sans-serif;
+}
+
+.copyright p {
+    font-size: 20px;
+}
+
+
+
+
+
+/* About page */
+
+.aboutbanner {
+    background-image: url(../images/About/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 30px 0;
+}
+
+
+.aboutbanner .efficientTailoredabout h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.aboutbanner .efficientTailoredabout h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.aboutbanner1 {
+    margin: 50px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutbanner1 h2 {
+    font-weight: 900 !important;
+    font-size: 3rem;
+}
+
+.aboutbanner2 {
+    background-color: #252525;
+    padding: 50px 0px;
+}
+
+.aboutbanner2 .mision {
+    background-color: #f9a326;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutbanner2 .team {
+    background-color: #f05335;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutbanner3 {
+    overflow: hidden;
+}
+
+
+.aboutbanner3 .usApart {
+    background-color: #f05335;
+    padding: 50px 125px 50px 50px;
+    color: #fff;
+}
+
+.aboutbanner3 .usApartimg {
+    /* height: 500px; */
+    padding: 30px;
+    background-color: #fff;
+}
+
+.aboutbanner3 {
+    overflow: hidden;
+}
+
+.aboutbanner3 .OurClients {
+    background-color: #4c4c4c;
+    padding: 50px 80px 50px 158px;
+    color: #fff;
+}
+
+
+.aboutbanner4 {
+    padding: 50px 0;
+    background-color: #2f81a7 !important;
+
+}
+
+.aboutbanner4 .joinUs {
+    color: #fff;
+}
+
+/* SLOTTED ANGLE SHELVING */
+
+.slotbanner1 {
+    margin: 50px 0;
+}
+
+.slotbanner1 .slotProd h1 {
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.slotbanner1 .slotProd h1 span {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.slotbanner2 {
+    overflow: hidden;
+}
+
+.slotbanner3 .slotKeyFeatures {
+    background-color: #f05335;
+    padding-top: 50px;
+
+}
+
+
+.slotbanner3 .slotKeyFeatures .slotKey {
+    background-color: #000;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.slotbanner3 .slotKeyFeatures .slotFeatures {
+    padding: 30px;
+    color: #fff;
+}
+
+.slotbanner4 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 775px;
+}
+
+.slotbanner4 .slotapp {
+    padding: 20px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+}
+
+.slotbanner5 {
+    margin-top: 380px;
+    margin-bottom: 50px;
+}
+
+/* Pallet Racking */
+
+
+.pallet1 {
+    background-image: url(../images/PalletRacking/banner.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0 0 0;
+    height: 300px;
+}
+
+.pallet1 .palletoverview {
+    background-color: #f05335;
+    padding: 30px;
+}
+
+
+.pallet2 {
+    overflow: hidden;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.pallet2 .pallet2KeyFeatures ul li {
+    list-style: url(../images/PalletRacking/liststyle.png);
+    margin-bottom: 10px;
+}
+
+.pallet3 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 700px;
+}
+
+.pallet3 .palletApp {
+    padding: 20px;
+}
+
+
+.pallet3 .PalletSafety {
+    padding: 30px;
+    background-color: #f05335;
+}
+
+.pallet4 {
+    margin-top: 280px;
+    margin-bottom: 50px;
+}
+
+
+/* Long Span Shelving */
+
+.longbanner {
+    overflow: hidden;
+}
+
+
+.long1 {
+    margin-top: -120px;
+    margin-bottom: 50px;
+}
+
+.long1KeyFeatures ul li {
+    list-style: url(../images/PalletRacking/liststyle.png);
+    margin-bottom: 10px;
+}
+
+.long2 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 775px;
+}
+
+.long2 .longapp {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+
+.long3 {
+    overflow: hidden;
+    margin-top: 280px;
+    padding: 50px 0;
+}
+
+
+.long3 .longsafety {
+    background-color: #f05335;
+    padding: 80px;
+    height: 341px;
+}
+
+
+/* DRIVE IN RACKING */
+
+
+
+.drive1 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 530px;
+}
+
+
+
+.drive1 .drive1KeyFeatures ul li {
+    list-style: url(../images/PalletRacking/liststyle.png);
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.drive2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.drive2 .driveapp {
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+    height: 160px;
+}
+
+.drive2 .driveconclusion {
+    background-color: #f05335;
+    padding: 35px;
+}
+
+
+
+/* Mezzanine Floors */
+
+.mezzabanner {
+    overflow: hidden;
+}
+
+.mezza1 {
+    overflow: hidden;
+    margin-top: -75px;
+}
+
+.mezza1 .mezza1KeyFeatures {
+    background-color: #f05335;
+    /* padding: 20px 0; */
+    color: #fff;
+    width: 90%;
+}
+
+.mezza1 .mezza1KeyFeatures .features {
+    padding: 50px;
+}
+
+
+.mezza2 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.mezza2 .mezzaapp {
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.mezza3 {
+    margin-top: 275px;
+    margin-bottom: 50px;
+}
+
+/* CANTILIVER RACKING */
+
+.cantiliverbanner {
+    background-image: url(../images/cantiliver_Racking/banner.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.cantiliverbanner .cantiliver1bannertext {
+    background-color: #f05335;
+    padding: 50px;
+    margin-top: 150px;
+    color: #fff;
+}
+
+.cantiliver1 {
+    margin-top: 150px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+
+.cantiliver2 {
+    padding: 50px 0;
+    background-color: #202020;
+    height: 700px;
+}
+
+.cantiliver2 .cantApp {
+    padding: 20px;
+    height: 180px;
+}
+
+
+.cantiliver2 .cantSafety {
+    padding: 30px;
+    background-color: #f05335;
+}
+
+
+.cantiliver3 {
+    margin-top: 300px;
+    padding: 30px 0;
+}
+
+
+/* Winshelving */
+
+.wins1 {
+    overflow: hidden;
+}
+
+.wins1 .whywins {
+    padding: 25px;
+}
+
+.wins1 .whywins p span {
+    color: #f05335;
+    font-weight: 800;
+}
+
+.wins1 .wins1application {
+    padding: 25px;
+}
+
+.wins1 .wins1appdesc {
+    background-color: #f05335;
+    padding: 25px;
+    color: #fff;
+}
+
+
+.wins2 {
+    margin-top: -50px;
+    padding: 50px 0;
+    background-color: #202020;
+}
+
+.wins2 .win2sol {
+    padding: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 220px;
+}
+
+.wins2 .win2sol h6 {
+    color: #f05335;
+
+}
+
+
+.wins3 {
+    margin: 50px 0;
+}
+
+.wins3 p span {
+    color: #f05335;
+}
+
+.wins4 .Enhance {
+    color: #fff;
+    padding: 30px;
+    background-color: #202020;
+    margin-top: -350px;
+    margin-bottom: 50px;
+}
+
+.wins4 .Enhance span {
+    color: #f05335;
+}
+
+
+/* SERVICES */
+
+
+.service1 {
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.service1 h1 {
+    font-weight: bolder;
+    padding-left: 50px;
+}
+
+.service1 h1 span {
+    border-bottom: 2px solid #000;
+}
+
+.service1 img {
+    margin-top: 50px;
+}
+
+.service1 .service1consulting {
+    padding: 50px 20px;
+    background-color: #99999c;
+    height: 425px;
+}
+
+.service1 .service1OurExpertise {
+    padding: 50px 20px;
+    background-color: #bebebe;
+    height: 425px;
+}
+
+.service2 {
+    margin: 50px 0;
+}
+
+
+.service2 .service2keys {
+    padding: 20px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    height: 375px;
+}
+
+
+.service3 {
+    background-image: url(../images/Services/banner2.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+
+.service3 .rackinspect {
+    padding: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+
+.service4 {
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.service4 .rackinstall {
+    padding: 20px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+.service4 .serviceRacklist {
+    height: 578px;
+}
+
+.service5 {
+    padding: 50px 0;
+}
+
+.service5 p span {
+    color: #f05335;
+    font-weight: bold;
+}
+
+.service5 .servicehealth {
+    background-color: #f05335;
+    padding: 20px;
+    color: #FFF;
+}
+
+
+.contactUs {
+    background-image: url(../images/contact_Us/banner.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+
+
+.contactdesc {
+    padding: 30px;
+    background-color: #202020;
+    color: #fff;
+}
+
+.committment {
+    margin: 50px 0;
+}
+
+
+/* .customerlist {
+    margin-top: -150px;
+    margin-bottom: 200px;
+} */
+
+
+.customerlist {
+    background-image: url(../images/customerlistbanner.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.customerS {
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -125px;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 1rem;
+        margin-left: 15%
+    }
+
+    .nav-brand {
+        display: none !important;
+    }
+
+    .navbar-brand {
+        display: block;
+        width: 200px;
+    }
+
+    .navbar>.container {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-nav li:nth-child(-n + 6):after {
+        display: none;
+    }
+
+    .subheader {
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .top-nav {
+        display: none !important;
+    }
+
+    .banner1 img {
+        height: auto;
+    }
+
+    .banner1 .efficient {
+        position: relative;
+        color: #000;
+        line-height: unset;
+        color: #fff;
+        margin-top: -0px;
+        z-index: 1;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+
+    .efficient .efficientTailored h1 {
+        color: #000;
+        font-size: 50px;
+    }
+
+    .efficient .efficientTailored h2 {
+        font-size: 30px;
+        color: #000;
+    }
+
+    .banner1 .efficient p {
+        color: #000;
+    }
+
+    .banner2 .whychoose {
+        text-align: center;
+    }
+
+    .banner2 .whyreasons {
+        height: auto;
+        text-align: center;
+    }
+
+    .banner3 .about {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    .banner5 .products {
+        height: auto;
+    }
+
+    .banner5 .products .productdescr p {
+        height: auto;
+    }
+
+    .banner7 {
+        background-color: #4c4c4c;
+        padding: 50px 0;
+    }
+
+    .banner7 .services h1 {
+        color: #f05335;
+        text-align: center;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    .banner7 .readMore1 {
+        margin-bottom: 10px;
+        /* margin-left: 35%; */
+    }
+
+    .aboutbanner2 .team h3 {
+        text-align: center;
+    }
+
+    .aboutbanner3 .usApart {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .aboutbanner3 .OurClients {
+        background-color: #4c4c4c;
+        /* padding: 50px 80px 50px 158px; */
+        color: #fff;
+        padding: 50px;
+    }
+
+    .slotProd {
+        text-align: center;
+    }
+
+    .slotbanner1 .col-lg-6:nth-child(1) {
+        justify-content: center;
+    }
+
+    .slotbanner4 {
+        height: auto;
+    }
+
+    .slotbanner5 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+    .pallet1 {
+
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .pallet2 {
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .pallet3 {
+        height: auto;
+    }
+
+    .pallet2KeyFeatures {
+        padding: 10px;
+    }
+
+    .pallet4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .long1 {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .long2 {
+        height: auto;
+    }
+
+    .long3 {
+        overflow: hidden;
+        margin-top: 0px;
+        padding: 50px 0;
+    }
+
+    .long3 .long3Conclusion {
+        padding: 10px;
+    }
+
+    .drive1 {
+        height: auto;
+    }
+
+    .drive2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .drive1KeyFeatures {
+        padding: 20px;
+    }
+
+    .mezza1 {
+        margin-top: 0px;
+    }
+
+    .mezza1 .mezza1KeyFeatures {
+        background-color: #f05335;
+        /* padding: 20px 0; */
+        color: #fff;
+        width: 100%;
+    }
+
+    .mezza2 {
+        height: auto;
+    }
+
+    .mezza3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cantiliverbanner {
+        height: auto;
+    }
+
+    .cantiliverbanner .cantiliver1bannertext {
+        margin-top: 0px;
+    }
+
+    .cantiliver1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cantiliver1 .cantiliver1KeyFeatures {
+        padding: 10px;
+    }
+
+    .cantiliver2 {
+        height: auto;
+    }
+
+    .cantiliver3 {
+        margin-top: 0;
+        padding: 30px 0;
+    }
+
+    .wins2 {
+        margin-top: 0px;
+        padding: 50px 0;
+        background-color: #202020;
+    }
+
+    .wins4 .Enhance {
+        color: #fff;
+        padding: 30px;
+        background-color: #202020;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    .wins2 .win2sol {
+        height: auto;
+    }
+
+    .service1 h1 {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .service1 .service1consulting {
+        height: auto;
+    }
+
+    .service1 .service1OurExpertise {
+        background-color: #bebebe;
+        height: auto;
+    }
+
+    .service2 .service2keys {
+        height: auto;
+    }
+
+    .service3 .rackinspect {
+        height: auto;
+    }
+
+    .service4 .rackinstall {
+        height: auto;
+        margin: 20px;
+    }
+
+    .service4 .serviceRacklist {
+        height: auto;
+    }
+
+    .service5 {
+        padding: 0px;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .teamStudy{
+        margin-top: 20px;
+    }
+    .slotConclusion{
+        padding: 15px;
+    }
+    .long1KeyFeatures{
+        padding: 15px;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (min-width:1370px) and (max-width: 2000px) {
+    p {
+        font-size: 20px;
+    }
+
+    .dropdown-menu li a {
+        color: #fff !important;
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #000;
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .banner5 .products {
+        border: 1px solid #000;
+        display: flex;
+        padding: 20px;
+        height: 270px;
+    }
+
+    .banner5 .products .productdescr p {
+        height: 140px;
+    }
+
+    .slotbanner4 {
+        height: 890px;
+        margin-top: 50px;
+    }
+
+    .slotbanner4 .slotapp {
+        padding: 20px;
+        height: 275px;
+        display: flex;
+        align-items: center;
+    }
+
+    .wins2 {
+        margin-top: 50px;
+        padding: 50px 0;
+        background-color: #202020;
+    }
+
+    .aboutbanner3 .OurClients {
+        background-color: #4c4c4c;
+        padding: 130px 100px 130px 156px;
+        color: #fff;
+    }
+
+    .slotbanner5 {
+        margin-top: 420px;
+        margin-bottom: 50px;
+    }
+
+    .mezza2 {
+        padding: 50px 0;
+        background-color: #202020;
+        height: 750px;
+        margin-top: 50px;
+    }
+
+    .cantiliver2 {
+        padding: 50px 0;
+        background-color: #202020;
+        height: 800px;
+    }
+
+    .cantiliver2 .cantApp {
+        padding: 20px;
+        height: 220px;
+    }
+
+    .cantiliver3 {
+        margin-top: 420px;
+        padding: 30px 0;
+    }
+
+    .pallet2 {
+        overflow: hidden;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+
+    .pallet3 {
+        height: 780px;
+    }
+
+    .pallet4 {
+        margin-top: 350px;
+        margin-bottom: 50px;
+    }
+
+    .drive2 {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .cantiliver1 {
+        margin-top: 200px;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .service3 .rackinspect {
+        padding: 20px;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-bottom: 20px;
+        height: 220px;
+    }
+
+    .footer .footerlinks li {
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .service2 .service2keys {
+        padding: 20px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+        height: 400px;
+    }
+
+    .service1 .service1consulting {
+        padding: 50px 20px;
+        background-color: #99999c;
+        height: 460px;
+    }
+
+    .service1 .service1OurExpertise {
+        padding: 50px 20px;
+        background-color: #bebebe;
+        height: 460px;
+    }
+
+}
