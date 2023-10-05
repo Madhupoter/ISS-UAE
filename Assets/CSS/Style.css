@@ -113,7 +113,7 @@ body {
 
 .nav-brand {
     display: block;
-    width: 339px;
+    width: 310px;
 }
 
 .navbar-brand {
@@ -170,6 +170,7 @@ body {
     border-radius: 20px;
     padding: 7px;
     margin-left: 6px;
+    display: none;
 }
 
 .fa-facebook {
@@ -392,7 +393,7 @@ button:focus::after {
 
 .readMore a:hover {
     color: #f05335;
-    
+
 }
 
 .readMore i {
@@ -502,12 +503,12 @@ button:focus::after {
 }
 
 
-.footer .footerlinks .active{
+.footer .footerlinks .active {
     color: #f05335 !important;
     font-weight: bold;
 }
 
-.footer .footerlinks li:hover{
+.footer .footerlinks li:hover {
     color: #faa624;
     /* font-weight: 600; */
     /* border-bottom: 1px solid #faa624; */
@@ -1228,6 +1229,14 @@ button:focus::after {
         font-size: 14px;
     }
 
+    .media_fixed {
+        right: -58px !important;
+    }
+
+    .media_fixed a img {
+        width: 50px !important;
+    }
+
     .banner7 .readMore1 {
         margin-bottom: 10px;
         /* margin-left: 35%; */
@@ -1423,21 +1432,24 @@ button:focus::after {
         padding: 0px;
     }
 
-    .buttons{
+    .buttons {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .teamStudy{
+
+    .teamStudy {
         margin-top: 20px;
     }
-    .slotConclusion{
+
+    .slotConclusion {
         padding: 15px;
     }
-    .long1KeyFeatures{
+
+    .long1KeyFeatures {
         padding: 15px;
     }
-    
+
 }
 
 
@@ -1581,4 +1593,19 @@ button:focus::after {
         height: 460px;
     }
 
+}
+
+
+
+.media_fixed {
+    position: fixed;
+    padding: 50px;
+    bottom: 0;
+    right: -50px !important;
+    z-index: 999999999;
+
+}
+
+.media_fixed a img {
+    width: 60px;
 }
